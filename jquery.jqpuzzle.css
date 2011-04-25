@@ -16,9 +16,11 @@
 
 /* outermost element which holds the full puzzle interface */
 .jqPuzzle {
+  margin-left:auto;
+  margin-right:auto;
 	padding: 5px;
 	border: 1px solid #222222;
-	background-color: #DDDDFF;
+	background-color: #000000;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
@@ -64,9 +66,9 @@
 	margin-right: 8px;
 	padding: 3px 5px;
 	border: 1px outset #FFFFFF;
-	background-color: #777799;
-	color: #FFFFFF;
-	font-size: 14px;
+	background-color: #000000;
+	color: #000000;
+	font-size: 9px;
 	line-height: normal;
 	float: left;
 }

@@ -6,7 +6,8 @@
     <title>Rebecca Meritz</title>
     <link rev="made" href="mailto:rebecca@meritz.com" title="Author" />
     <link rel="icon" href="favicon.ico" type="image/x-icon"> 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="rebeccastyle.css" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> 
     <script type="text/javascript" src="jquery.jqpuzzle.packed.js"></script> 
     <link rel="stylesheet" type="text/css" href="jquery.jqpuzzle.css" />
@@ -14,11 +15,11 @@
   </head>
   <body>
     <h1>Rebecca Meritz</h1>
-   <p>rebecca@meritz.com</p>
-   <p><a href="http://github.com/rmeritz" >Github</a></p>
-   <p><img src="rebeccarocks.jpg" alt="Rebecca in JTree." class="jqPuzzle" id="portrait"/></p>
-   <script type="text/javascript"> 
-    $(document).ready(function() { 
+    <p><a href="mailto:rebecca@meritz.com">rebecca@meritz.com</a></p>
+    <p><a href="http://github.com/rmeritz" >Github</a></p>
+    <p><div id="puz"><img src="rebeccarocks.jpg" alt="Rebecca in JTree." class="jqPuzzle" id="portrait"/></div></p>
+    <script type="text/javascript"> 
+      $(document).ready(function() { 
         $('#portrait').jqPuzzle({ 
             shuffle: true, 
             numbers: false,
@@ -33,7 +34,7 @@
             }, 
             style: { 
                 gridSize: 0, 
-                overlap: false, 
+                overlap: true, 
                 backgroundOpacity: 0 
             } 
         }); 
