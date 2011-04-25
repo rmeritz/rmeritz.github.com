@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Rebecca Meritz</title>
+    <link rev="made" href="mailto:rebecca@meritz.com" title="Author" />
+    <!--<link rel="shortcut icon" type="image/gif" href="/favicon.ico" />-->
+    <!--<meta name="viewport" content="width=device-width; initial-scale=1.0" /> Moblie Browser scaling factor --> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> 
+    <script type="text/javascript" src="jquery.jqpuzzle.packed.js"></script> 
+    <link rel="stylesheet" type="text/css" href="jquery.jqpuzzle.css" />
+    <meta name="description" content="Rebecca Meritz loves functional programming, baking, and biking." />
+  </head>
+  <body>
+    <h1>Rebecca Meritz</h1>
+   <p>rebecca@meritz.com</p>
+   <p><a href="http://github.com/rmeritz" >Github</a></p>
+   <p><img src="rebeccarocks.jpg" alt="Rebecca in JTree." class="jqPuzzle" id="portrait"/></p>
+   <script type="text/javascript"> 
+    $(document).ready(function() { 
+        $('#portrait').jqPuzzle({ 
+            shuffle: true, 
+            numbers: false,
+            rows: 3,
+            cols: 3,
+            control: { 
+                shufflePieces: false, 
+                toggleNumbers: false, 
+                toggleOriginal: false, 
+                counter: false, 
+                timer: false 
+            }, 
+            style: { 
+                gridSize: 0, 
+                overlap: false, 
+                backgroundOpacity: 0 
+            } 
+        }); 
+    }); 
+</script>
+  </body>
+</html>
+
