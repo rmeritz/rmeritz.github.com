@@ -1,31 +1,31 @@
 body {
-	    font-family:  Helvetica, futura, Verdana, sans-serif;
-	    font-size: 16pt;
-      color:          #2e2e2e;
-	    background-color:   #ffffff;
-      text-align:center;
+    font-family:  Helvetica, futura, Verdana, sans-serif;
+    font-size: 16pt;
+    color: #2e2e2e;
+    background-color:   #ffffff;
+    text-align:center;
 }
 
 h1 {
-	    font-family:        Helvetica, futura, Arial, sans-serif;
-      font-size:          36pt;
-	    font-style:         normal;
-      color:              #2e2e2e;
-	    padding-top:        30px;
+    font-family: Helvetica, futura, Arial, sans-serif;
+    font-size: 36pt;
+    font-style: normal;
+    color: #2e2e2e;
+    padding-top: 30px;
 }
 
 a:link {
-	    color:              #2e2e2e;
-	    text-decoration:    none;
+    color: #2e2e2e;
+    text-decoration: none;
 }
 
 a:visited {
-	    color:              #2e2e2e;
-	    text-decoration:    none;
+    color: #2e2e2e;
+    text-decoration: none;
 }
 
 a:hover {
-	    color: gray             ;
+    color: gray;
 }
 
-  
+
