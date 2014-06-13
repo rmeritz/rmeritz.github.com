@@ -1,74 +1,137 @@
-\documentclass{res}
-\usepackage[utf8]{inputenc}
+\documentclass[line]{res}
 \usepackage[T1]{fontenc}
-\usepackage{helvetica}
-
-\begin{document}
+\usepackage{tgpagella}
+\usepackage[bottom = 0cm, top=2cm]{geometry}
+\usepackage[pdftitle={Rebecca Meritz},
+pdfauthor={Rebecca Meritz},
+pdfsubject={Rebecca Meritz's \Resume},
+pdfkeywords={Rebecca Meritz, \Resume, resume}]{hyperref}
 
 \name{Rebecca J. Meritz}
+\address{H\"ogbergsgatan 66C\\Stockholm, 11854, Sweden $\cdot$ +46 729647414}
+\address{\hfill rebecca@meritz.com $\cdot$ github.com/rmeritz}
 
-\address{\bf  Högbergsgatan 66C \\ Stockholm, 11854, Sweden \\ +46 700012715 \\ rebecca@meritz.com \\ github.com/rmeritz}
+\begin{format}
+\title{l}\dates{r}\\
+\employer{l}\location{r}\\
+\body
+\end{format}
 
+\begin{document}
 \begin{resume}
 
 \section{SKILLS}
-    Languages (Fluent): Python, Erlang, English \\
-    Langauges (Proficent): Javascript, SASS/CSS, Ruby, Bash, Latex, Swedish \\
-    Tools: Git, Unix, Vim, Emacs, Django, Postgres, Riak, Vagrant, Agile \\
+\begin{tabular}{ l l }
+Programming Languages: &
+Python,
+Erlang,
+Javascript,
+CSS/Sass,
+Ruby,
+Haskell,
+Bash,
+\LaTeX \\
 
-\section{EXPERIENCE}
-FundedByMe AB \\
-Stockholm, SE \\
-February 2013 - Present
-Lead Developer
-Full stack web development for an internation crowdfunding platform
-Developing, testing, deploying, and maintaining code
-Promoted to lead developer for showing leadership skills
+Tools: &
+Django,
+Postgres,
+Riak,
+Vagrant,
+Nginx,
+Unix,
+Git,
+Agile,
+Vim,
+Emacs \\
 
-Klarna AB
-Stockholm, SE
-May 2011 - Present
-Developer
-• Design, develop, and test secure APIs in Erlang using OTP behaviors.
-• Work with an agile team on fault-tolerant backend infrastructure for global e-commerce.
-• Communicate within a team and present to key stakeholders.
-• Facilitate the release process including the development of tools.
-• Integrate with external services and open source libraries.
+Natural Languages: &
+English (fluent),
+Swedish (conversational)
+\end{tabular}
 
-Undergraduate Research Assistant
-June 2008 - December 2009
-Center for High-Rate Nanomanufacturing
-Boston, MA
-• Co-authored: "Engineering Low-Aspect Ratio Carbon Nanostructures: Nanocups, Nanorings,
-and Nanocontainers," ACS Nano, 2009.
-• Optimized process to grow densely packed, vertically-aligned, single-wall nanotubes.
-• Operated and developed recipes for chemical vapor deposition furnace, ion mill, inductive
-coupling plasma, electron beam evaporator, and scanning electron microscope.
+\section {EXPERIENCE}
+\vspace {2 pt}
 
-Mechanical Engineering Internship
-July 2009 - August 2009
-Naval Undersea Warfare Center
-Newport, RI
-• Modeled MK54 Torpedo engine parts and assemblies.
-• Oversaw deep depth pressure vessel tests, performed data analysis, and compiled lab reports.
-• Coordinated Otto fuel compatibility testing.
+\employer{\textit{FundedByMe AB}}
+\title{Lead Developer}
+\dates{\small {February 2013 - Present}}
+\location{\small {Stockholm, SE}}
+\begin{position}
+\noindent
+\vspace {-10 pt}
+\begin{itemize}
 
-Torpedo R\&D Engineering Co-op
-January 2009 - June 2009
-Naval Sea Systems Command
-Washington, D.C.
-• Investigated requirements and updated security practices.
-• Created expense plans and a process for tracking expenditures to help shape the budget.
-• Coordinated Insensitive Munitions testing across multiple test sites.
+\item Build Django Web app for an international crowdfunding platform.
+\item Work with product to prioritize features and triage tickets.
+\item Institute and enforce a culture of automation, CI testing, and code reviews.
+\item Run technical interviews for the development team.
+\item Expand and manage the development team onboarding documentation.
+\item Automate deployment processes with Fabric, CircleCI, and Heroku.
+\item Increase development team transparency via release notes and issue tracking.
+\item Publish, test, maintain, and document open source libraries.
+
+\end{itemize}
+\end{position}
+
+
+\employer {\textit{Klarna AB}}
+\title{Developer}
+\dates{\small {May 2011 - January 2013}}
+\location{\small {Stockholm, SE}}
+\begin{position}
+\noindent
+\vspace {-10 pt}
+\begin{itemize}
+\item Design, develop, and test secure APIs in Erlang using OTP behaviors.
+\item Work with an agile team on fault-tolerant backend infrastructure for global e-commerce.
+\item Communicate within a team and present to key stakeholders.
+\item Facilitate the release process including the development of tools.
+\item Integrate with external services and open source libraries.
+\end{itemize}
+\end{position}
+
+\employer {\textit{MIT Lincoln Laboratory}}
+\title{Mechanical Engineering Co-op}
+\dates{\small {January 2010 - June 2010}}
+\location{\small {Lexington, MA}}
+\begin{position}
+\noindent
+\vspace {-10 pt}
+\begin{itemize}
+\item Designed LASER Optical Module for XPrize competition.
+\item Developed and conducted preliminary tests of module components.
+\end{itemize}
+\end{position}
+
+\employer{\textit {Center for High-Rate Nanomanufacturing}}
+\title{Undergraduate Research Assistant}
+\dates{\small{June 2008 - December 2009}}
+\location{\small{Boston, MA}}
+\begin {position}
+\vspace {-10 pt}
+\begin{itemize}
+\item \underline {Co-authored}: "Engineering Low-Aspect Ratio Carbon Nanostructures: Nanocups, Nanorings, and Nanocontainers," ACS Nano, 2009.
+\item Optimized process to grow densely packed, vertically-aligned, single-wall nanotubes.
+%\item Operated and developed recipes for chemical vapor deposition furnace, ion mill, inductive coupling plasma, electron beam evaporator, and scanning electron microscope.
+\end{itemize}
+\end{position}
+
+\employer{\textit{Naval Sea Systems Command}}
+\title{Torpedo R\&D Engineering Co-op}
+\dates{\small {January 2009 - August 2009}}
+\location{\small{Washington, D.C. / Newport, RI}}
+\begin {position}
+\vspace {-10 pt}
+\begin{itemize}
+%\item Created expense plans and a process for tracking expenditures to help shape the budget.
+\item Modeled MK54 Torpedo engine parts and assemblies.
+\item Coordinated Otto fuel compatibility, Insensitive Munitions, and deep depth pressure vessel tests
+\end{itemize}
+\end{position}
 
 \section{EDUCATION}
-    Northeastern University, Boston, MA \\
-    B.S. Mechanical Engineering, Honors College \\
-    Graduation April 2011 \\
-    G.P.A. 3.7/4.0
-
-\section{EXTRACURRICULAR INTERESTS}
-    Climbing, roller derby, cycling, and linguistics.
+Northeastern University, Boston, MA\hfill Graduation April 2011 \\
+B.S. Mechanical Engineering, Honors College \hfill G.P.A. 3.76/4.0 \
 
 \end{resume}
 \end{document}
