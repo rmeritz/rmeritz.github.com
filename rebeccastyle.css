@@ -183,6 +183,39 @@ table {
     }
 }
 
+.talks {
+  margin-top: 40em;
+}
+
+a:link {
+  color: #ffff83;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffff83;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b8b810;
+}
+
+.talks ul {
+  text-align: left;
+  list-style-type: disc;
+}
+
+.talks li {
+  margin: 0.7em;
+}
+
+@media screen and (max-width: 640px) {
+    footer {
+        font-size: .6em
+    }
+}
+
 header,
 .social-networks,
 footer {
@@ -214,7 +247,6 @@ h4 {
 .container {
     margin-bottom: 1em;
     margin-top: 2em;
-    padding: 5% 0
 }
 
 @media screen and (max-width: 640px) {
@@ -246,9 +278,21 @@ header h1 a {
     text-decoration: none
 }
 
-header h2 {
-    font-family:  Helvetica, futura, Verdana, sans-serif;
-    color: #fff
+h2 {
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.2em;
+}
+
+h3 {
+    color: #fff;
+    font-size: 2em;
+    text-decoration: underline;
+    line-height: 1.1em;
+}
+
+.talks div {
+  padding: 10% 0;
 }
 
 .social-networks li {
@@ -263,22 +307,15 @@ header h2 {
 
 .social-networks li a {
     text-decoration: none;
-    color: #fff
+    color: #ffff83
+}
+
+.social-networks li a:hover {
+  color: #b8b810;
 }
 
 @media screen and (max-width: 640px) {
     .social-networks li {
         font-size: 1.25em
-    }
-}
-
-footer {
-    opacity: 0.6;
-    text-align: center
-}
-
-@media screen and (max-width: 640px) {
-    footer {
-        font-size: .6em
     }
 }
